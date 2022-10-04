@@ -1,2 +1,3 @@
 # js
-A practicing javascript unit testing using AAA pattern
+
+Practicing javascript unit testing using AAA pattern
