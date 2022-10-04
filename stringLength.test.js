@@ -1,13 +1,13 @@
 const stringLength = require('./stringLength');
 
-test('String Samuel should return: 6', () => {
+it('String Samuel should return: 6', () => {
   expect(stringLength('Samuel')).toBe(6);
 });
 
-test('String should be at leasst one character', () => {
-  expect(stringLength('')).toBe(0);
+it('String should be at least one character', () => {
+  expect(stringLength('str')).not.toBeLessThan(1);
 });
 
-test('String should not be longer than 10', () => {
-  expect(stringLength('Samuel Munyi')).toBe(10);
+it('String should not be longer than 10', () => {
+  expect(stringLength('str')).not.toBeGreaterThan(10);
 });
